@@ -3,7 +3,7 @@ package searching;
 public class LastOccurance {
 	public static int lastOccurance(int[] arr, int x) {
 		int low = 0;
-		int high = arr.length;
+		int high = arr.length-1;
 		int res = -1;
 		while(low<=high) {
 			
