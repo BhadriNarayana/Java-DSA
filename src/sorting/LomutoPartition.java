@@ -11,19 +11,18 @@ public class LomutoPartition {
 		arr[j] = temp;
 	} 
 	static int lomuto(int[] arr, int l, int h) {//considers last element as pivot and places it in its sorted position
-		int n = h-l+1;
-		int pivot = arr[n-1];
+
+		int pivot = arr[h];
 		int i = l-1;
 		
-		while(l <= h) {
-			if(arr[l] < pivot) {
+		for(int j = l; j< h; j++) {
+			if(arr[j] < pivot) {
 				i++;
-				swap(arr, i, l);
+				swap(arr, i, j);
 			}
-			l++;
 		}
 		
-		swap(arr, h, i+1);
+		swap(arr, i+1, h);
 		return i+1;
 	}
 		 
