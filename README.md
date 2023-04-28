@@ -1,1 +1,1 @@
-## DSA practice questions in Java.
+## Daily DSA practice questions in Java.
