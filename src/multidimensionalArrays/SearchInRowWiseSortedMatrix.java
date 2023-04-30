@@ -2,7 +2,9 @@ package multidimensionalArrays;
 
 public class SearchInRowWiseSortedMatrix {
 	
-	static void search(int[][] arr, int c, int r, int x) {
+	static void search(int[][] arr, int c, int r, int x) {	
+		//TC = O(R+C) AS = O(1)
+	
 		int right = c-1;
 		
 		while(right>=0) {
