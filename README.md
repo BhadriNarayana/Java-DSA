@@ -1,1 +1,1 @@
-## Daily Data Structures and Alogorithms practice questions in Java.
+## Daily Data Structures and Algorithms practice questions in Java.
