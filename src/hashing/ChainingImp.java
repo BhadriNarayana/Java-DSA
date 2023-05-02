@@ -5,7 +5,7 @@ import java.util.LinkedList;
 class MyHash{
 	int BUCKET;
 	
-	ArrayList<LinkedList<Integer>> table;
+	ArrayList<LinkedList<Integer>> table = new ArrayList<LinkedList<Integer>>();
 	MyHash(int b) {
 		BUCKET = b;
 		
@@ -33,5 +33,19 @@ class MyHash{
 	}
 }
 public class ChainingImp {
+	
+	public static void main(String args[]) {
+		MyHash h1 = new MyHash(5);
+		
+		h1.insert(2);
+		h1.insert(20);
+		h1.insert(7);
+		
+		//h1.remove(2);
+		
+		System.out.println(h1.search(2));  
+		
+	}
+	
 	
 }
