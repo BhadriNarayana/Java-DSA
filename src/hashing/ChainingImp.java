@@ -19,6 +19,12 @@ class MyHash{
 		
 		table.get(ind).add((Integer) key);
 	}
+	
+	void remove(int key) {
+		int ind = key % BUCKET;
+		
+		table.get(ind).remove((Integer) key);
+	}
 }
 public class ChainingImp {
 	
