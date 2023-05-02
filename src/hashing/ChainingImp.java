@@ -25,6 +25,12 @@ class MyHash{
 		
 		table.get(ind).remove((Integer) key);
 	}
+	
+	boolean search(int key) {
+		int ind = key % BUCKET;
+		
+		return table.get(ind).contains((Integer) key);
+	}
 }
 public class ChainingImp {
 	
