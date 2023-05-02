@@ -15,7 +15,9 @@ class MyHash{
 	}
 	
 	void insert(int key) {
+		int ind = key % BUCKET;
 		
+		table.get(ind).add((Integer) key);
 	}
 }
 public class ChainingImp {
