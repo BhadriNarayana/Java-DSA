@@ -2,15 +2,22 @@ package hashing;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
-
 class MyHash{
+	int BUCKET;
 	
-}
-
-public class ChainingImp {
+	ArrayList<LinkedList<Integer>> table;
+	MyHash(int b) {
+		BUCKET = b;
+		
+		for(int i = 0; i < b; i++) {
+			table.add(new LinkedList<Integer>());
+		}
+	}
 	
-	public static void main(String args[]) {
+	void insert(int key) {
 		
 	}
-
+}
+public class ChainingImp {
+	
 }
