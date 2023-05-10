@@ -23,3 +23,5 @@ public class UnionOfTwoUnsortedArrays {
 	}
 
 }
+
+// TC = O(a + b) AS = O(a+b)
