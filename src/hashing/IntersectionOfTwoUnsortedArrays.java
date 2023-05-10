@@ -22,3 +22,9 @@ public class IntersectionOfTwoUnsortedArrays {
 	}
 
 }
+//TC = O(a) + O(b)
+
+// O(b) for inserting b elements in set
+// O(a) for searching all the elements of a one after another in the bset
+
+// AS = O(b) i.e., size of created hashset of array b
